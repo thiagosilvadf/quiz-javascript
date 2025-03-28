@@ -18,8 +18,8 @@ body {
 
 .container {
     background-color: #121214;
-    width: 100%;
-    max-width: 1800px;
+    width: 90%;
+    max-width: 800px;
     margin: auto;
 
     border: 2px solid #e1e1e6;
@@ -49,7 +49,6 @@ body {
 
 .answers-container {
     text-align: center;
-    height: 200px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,7 +61,7 @@ body {
 .button {
     background-color: #4863f7;
     color: #fff;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     border: 0;
     border-radius: 6px;
