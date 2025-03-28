@@ -106,6 +106,14 @@ function finishGame() {
   `
 }
 
+function reproduzirAudio() {
+  document.getElementsByTagName("audio")[0].play()
+}
+
+function pararAudio() {
+  document.getElementsByTagName("audio")[0].pause()
+}
+
 
 const questions = [
   {
