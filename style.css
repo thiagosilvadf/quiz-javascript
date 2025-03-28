@@ -50,10 +50,10 @@ body {
 .answers-container {
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 210%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 16px;  
 }
 .next-question {
     margin-top: 32px;
