@@ -19,6 +19,9 @@ function startGame() {
 
 function displayNextQuestion() {
   resetState()
+
+  document.body.removeAttribute("class")
+  $nextQuestionButton.classList.add("hide")
   
   if (questions.length === currentQuestionIndex) {
     return finishGame()
@@ -65,6 +68,7 @@ function selectAnswer(event) {
     } else {
       button.classList.add("incorrect")
     }
+    button.disabled = true
   })
   
   $nextQuestionButton.classList.remove("hide")
