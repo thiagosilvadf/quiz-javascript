@@ -124,7 +124,9 @@
     background-color: #a10101;
   }
 
-
+  .video-escondido {
+    display:none;
+  }
 
 
   
