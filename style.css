@@ -1,3 +1,5 @@
+@charset "UTF-8"
+
 * {
     padding: 0;
     margin: 0;
@@ -98,18 +100,18 @@
     filter: brightness(0.8);
   }
   
-  /* Finish game */
   .final-message {
+    color: white;
     font-size: 20px;
     text-align: center;
   }
   
   .final-message span {
+    color: white;
     display: block;
     margin-top: 8px;
   }
   
-  /* General styles */
   .hide {
     display: none;
   }
