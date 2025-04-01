@@ -4,6 +4,7 @@ const $questionsContainer = document.querySelector(".questions-container")
 const $questionText = document.querySelector(".question")
 const $answersContainer = document.querySelector(".answers-container")
 const $answers = document.querySelectorAll(".answer")
+const $videoescondido = document.querySelectorAll(".videoescondido")
 
 let currentQuestionIndex = 0
 let totalCorrect = 0
@@ -117,6 +118,11 @@ function reproduzirAudio() {
 function pararAudio() {
   document.getElementsByTagName("audio")[0].pause()
 }
+
+document.getElementById("ultima-pagina").addEventListener("click",
+  function () {
+  document.getElementById("meu-video").style.display = "block";
+});
 
 
 const questions = [
