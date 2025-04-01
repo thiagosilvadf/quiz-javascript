@@ -9,7 +9,9 @@
   }
   
   body {
-    background-color: #121214;
+    background-image: url(imagens/imagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     height: 100vh;
     display: flex;
