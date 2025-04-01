@@ -1,5 +1,3 @@
-@charset "UTF-8"
-
 * {
     padding: 0;
     margin: 0;
@@ -22,20 +20,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
   }
 
-  h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 0px rgb(11, 11, 77);
-    margin: 30px;
-    padding: 50px;
-}
-
-  
+    h1 {
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 0px rgb(11, 11, 77);
+        margin: 30px;
+        padding: 50px;
+    }
+    
   .container {
-    color: white;
     background-color: #121214;
     width: 90%;
     max-width: 800px;
@@ -52,7 +47,6 @@
   }
   
   .questions-container {
-    color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -61,14 +55,12 @@
   }
   
   .question {
-    color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
   }
   
   .answers-container {
-    color: white;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,18 +92,18 @@
     filter: brightness(0.8);
   }
   
+  /* Finish game */
   .final-message {
-    color: white;
     font-size: 20px;
     text-align: center;
   }
   
   .final-message span {
-    color: white;
     display: block;
     margin-top: 8px;
   }
   
+  /* General styles */
   .hide {
     display: none;
   }
