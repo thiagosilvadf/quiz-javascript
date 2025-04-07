@@ -124,9 +124,10 @@
     background-color: #a10101;
   }
 
-  .video-escondido {
-    display:none;
+  h2 {
+    display: none;
   }
 
-
-  
+  #ultima-pagina h2 {
+    display: block;
+  }
