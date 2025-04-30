@@ -124,14 +124,17 @@ document.getElementById("ultima-pagina").addEventListener("click",
   document.getElementById("meu-video").style.display = "block";
 });
 
+document.getElementById("pagina-1").addEventListener("click", function() {
+  document.getElementById("meu-video").style.display = "block";
+});
 
 const questions = [
   {
     question: "O que é radiação ionizante?",
     answers: [
-      { text: "A - Um tipo de luz", correct: false },
+      { text: "A - Um tipo de radiação que pode causar danos", correct: true },
       { text: "B - Um tipo de som", correct: false },
-      { text: "C - Um tipo de radiação que pode causar danos", correct: true },
+      { text: "C - Um tipo de luz", correct: false },
       { text: "D - Um tipo de energia", correct: false }
     ]
   },

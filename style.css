@@ -131,3 +131,11 @@
   #ultima-pagina h2 {
     display: block;
   }
+
+  #meu-video {
+    display: none;
+  }
+  
+  #pagina-1 #meu-video {
+    display: block;
+  } 
