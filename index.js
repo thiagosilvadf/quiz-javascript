@@ -132,9 +132,9 @@ const questions = [
   {
     question: "O que é radiação ionizante?",
     answers: [
-      { text: "A - Um tipo de radiação que pode causar danos", correct: true },
+      { text: "A - Um tipo de luz", correct: false },
       { text: "B - Um tipo de som", correct: false },
-      { text: "C - Um tipo de luz", correct: false },
+      { text: "C - Um tipo de radiação que pode causar danos", correct: true },
       { text: "D - Um tipo de energia", correct: false }
     ]
   },
