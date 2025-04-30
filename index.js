@@ -4,7 +4,6 @@ const $questionsContainer = document.querySelector(".questions-container")
 const $questionText = document.querySelector(".question")
 const $answersContainer = document.querySelector(".answers-container")
 const $answers = document.querySelectorAll(".answer")
-const $videoescondido = document.querySelectorAll(".videoescondido")
 
 let currentQuestionIndex = 0
 let totalCorrect = 0
@@ -20,9 +19,6 @@ function startGame() {
 
 function displayNextQuestion() {
   resetState()
-
-  document.body.removeAttribute("class")
-  $nextQuestionButton.classList.add("hide")
   
   if (questions.length === currentQuestionIndex) {
     return finishGame()
@@ -69,7 +65,6 @@ function selectAnswer(event) {
     } else {
       button.classList.add("incorrect")
     }
-    button.disabled = true
   })
   
   $nextQuestionButton.classList.remove("hide")
@@ -111,22 +106,6 @@ function finishGame() {
   `
 }
 
-function reproduzirAudio() {
-  document.getElementsByTagName("audio")[0].play()
-}
-
-function pararAudio() {
-  document.getElementsByTagName("audio")[0].pause()
-}
-
-document.getElementById("ultima-pagina").addEventListener("click",
-  function () {
-  document.getElementById("meu-video").style.display = "block";
-});
-
-document.getElementById("pagina-1").addEventListener("click", function() {
-  document.getElementById("meu-video").style.display = "block";
-});
 
 const questions = [
   {
@@ -142,17 +121,17 @@ const questions = [
     question: "De onde vem a Radiação Ionizante?",
     answers: [
       { text: "A - Do sol", correct: false },
-      { text: "B - Das estrelas", correct: false },
-      { text: "C - De fontes naturais e artificiais", correct: true },
+      { text: "B - De fontes naturais e artificiais", correct: true },
+      { text: "C - Das estrelas", correct: false },
       { text: "D - De lugar nenhum", correct: false }
     ]
   },
   {
     question: 'O que pode acontecer se você for exposto à radiação ionizante?',
     answers: [
-      { text: 'A - Você pode se sentir mais saudável', correct: false },
+      { text: 'A - Você pode ter mais chances de desenvolver doenças', correct: true },
       { text: 'B - Você pode ter mais energia', correct: false },
-      { text: 'C - Você pode ter mais chances de desenvolver doenças', correct: true },
+      { text: 'C - Você pode se sentir mais saudável', correct: false },
       { text: "D - Você pode se sentir mais feliz", correct: false }
     ]
     
@@ -162,15 +141,15 @@ const questions = [
     answers: [
       { text: 'A - Usando protetor solar', correct: false },
       { text: 'B - Usando óculos de sol', correct: false },
-      { text: 'C - Evitando a exposição', correct: true },
-      { text: 'D - Comendo alimentos ricos em vitamina C', correct: false }
+      { text: 'C - Comendo alimentos ricos em vitamina C', correct: false },
+      { text: 'D - Evitando a exposição', correct: true }
     ]
   },
   {
     question: 'Por que é importante saber sobre a radiação ionizante?',
     answers: [
-      { text: 'A - Para saber como se proteger', correct: true },
-      { text: 'B - Para saber como usar máquinas de raios-X', correct: false },
+      { text: 'A - Para saber como usar máquinas de raios-X', correct: false },
+      { text: 'B - Para saber como se proteger', correct: true },
       { text: 'C - Para saber como construir um reator nuclear', correct: false },
       { text: 'D - Para saber como fazer uma bomba nuclear', correct: false }
     ]
