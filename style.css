@@ -97,7 +97,7 @@
 
   .midia {
     position: relative;
-    top: 30px;
+    top: 50px;
     border-radius: 10px;
 }
 
@@ -128,14 +128,7 @@
     display: none;
   }
 
-  #ultima-pagina h2 {
+  .video h2 {
+    position: relative;
     display: block;
   }
-
-  #meu-video {
-    display: none;
-  }
-  
-  #pagina-1 #meu-video {
-    display: block;
-  } 
